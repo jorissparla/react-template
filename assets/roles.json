@@ -1,0 +1,10 @@
+{
+    "roles": [
+        { "id":1, "name": "Basic User"},
+        { "id":2, "name": "Advanced User"},
+        { "id":3, "name": "Hours Entry"},
+        { "id":4, "name": "Administrator"},        
+        { "id":5, "name": "Prime minister"}
+        
+    ]
+}

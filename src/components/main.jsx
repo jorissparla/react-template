@@ -1,6 +1,7 @@
 var React = require('react');
 var Header= require('./header');
 var List = require('./list');
+var ListUser = require('./user-list');
 
 module.exports = React.createClass({
   render: function() {
@@ -14,7 +15,7 @@ module.exports = React.createClass({
     if(this.props.children) {
       return this.props.children
     } else {
-      return <List />
+      return <ListUser />
     }
   }
 });

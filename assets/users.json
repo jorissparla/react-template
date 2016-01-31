@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "created": "320",
+      "updated": "20",
+      "name": "Mark Rutte",
+      "about": "Liberal politician"  ,
+      "telephone": "0342-123456",
+       "telephone": "0342-123456",
+       "email": "rutte@kamer2.nl",
+      "roles":  [
+        {
+          "rolename": "Basic User"
+        },
+
+        {
+          "rolename": "Prime minister"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "created": "200",
+      "updated": "20",
+      "name": "Greet Wilders",
+      "about": "This is my natural hair color"  ,
+      "telephone": "0342-123456",
+       "email": "devrouwvan@kamer2.nl" ,
+      "roles":  [
+        {
+          "rolename": "Basic User"
+        },
+        {
+          "rolename": "Buyer"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "created": "55",
+      "updated": "20",
+      "about": "Famous football player"  ,
+      "name": "Johan Cruyff",
+      "telephone": "0342-123456",
+      "email": "nummer10@voetbal.nl",
+      "roles":  [
+        {
+          "rolename": "Basic User"
+        }
+      ]
+
+    },
+    {
+      "id": 48,
+      "created": "44",
+      "updated": "20",
+      "about": "Magician"  ,
+      "name": "Mumbo Jumbo",
+      "telephone": "0342-123456",
+      "email": "m.jumbo@pocus.nl",
+      "roles":  [
+        {
+          "rolename": "Basic User"
+        },
+
+        {
+          "rolename": "Administrator"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "created": "111",
+      "updated": "20",
+      "about": "Hot shot - I know Obama personally"  ,
+      "name": "Charles Philips",
+      "telephone": "0342-123456",
+     "email": "charleyp@infor.com",
+      "roles":  [
+        {
+          "rolename": "Basic User"
+        },
+        {
+          "rolename": "Buyer"
+        } ,
+
+        {
+          "rolename": "Administrator"
+        }
+      ]
+
+    }
+  ]
