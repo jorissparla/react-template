@@ -1,0 +1,31 @@
+{
+  "name": "react-skeleton",
+  "version": "1.0.0",
+  "description": "My React Template",
+  "main": "index.js",
+  "scripts": {
+    "start":"watchify src/main.jsx -v -t [babelify --presets [ react] ] -o public/js/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorissparla/react-template.git"
+  },
+  "author": "Joris Sparla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorissparla/react-template/issues"
+  },
+  "homepage": "https://github.com/jorissparla/react-template#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "history": "^1.17.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^1.0.3",
+    "reflux": "^0.3.0",
+    "watchify": "^3.7.0",
+    "whatwg-fetch": "^0.11.0"
+  }
+}
