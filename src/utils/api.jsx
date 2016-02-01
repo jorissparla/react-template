@@ -17,8 +17,5 @@ module.exports = {
       return response.json()
 
     })
-  },
-  getUser: function(id) {
-    
   }
 };
