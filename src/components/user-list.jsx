@@ -1,31 +1,46 @@
 var React = require('react');
 var ListItemUser = require('./list-item-user');
 var Api = require('../utils/api');
+var UserStore = require('../stores/user-store');
+var Actions = require('../actions');
+var Reflux = require('reflux');
 
-var cars = [{"id":1, "name":"BMW" }, {"id":2, "name":"Mercedes-Benz" }, {"id":3, "name":"Volkswagen" }]
 
 var UserList = React.createClass({
+  mixins: [
+  Reflux.listenTo(UserStore, 'onChange')
+  ],
   getInitialState: function() {
-    Api.getUsers()
-    .then (function(data) {
-      console.log(data);
-      this.setState({users:data});
-      console.log(this.users);
-    }.bind(this));
     return {
       users: []
     }
   },
+  componentWillMount: function() {
+    Actions.getUsers();
+    console.log('componentWillMount');
+  },
   render: function() {
-    return (<div className="list-group">
-      {this.renderUsers()}
-    </div>
+    return (
+      <div className="row">
+        <div className="col-md-4">
+          <div className="list-group">
+            {this.renderUsers()}
+          </div>
+        </div>
+      </div>
     );
   },
   renderUsers: function () {
+    console.log('render', JSON.stringify(this.state.users[0]));
+
     return this.state.users.map(function(user){
-      return   <ListItemUser key={user.id} user={user.name}></ListItemUser>
-    })
+      return   <ListItemUser key={user.id} {...user} ></ListItemUser>
+    });
+  },
+  onChange: function (event, users) {
+    console.log('onChange', users);
+    this.setState({users: users});
+
   }
 
 });
